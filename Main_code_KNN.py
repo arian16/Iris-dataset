@@ -70,5 +70,8 @@ axKNN.legend(loc = 'center right')
 axKNN.spines['right'].set_visible(False) 
 axKNN.spines['top'].set_visible(False)
 axKNN.set_ylim(75,100)
+plt.text(k_optimal, max_accuracy,str(round(max_accuracy, 2)),fontsize=12,fontweight='bold',
+                    ha='left',va='bottom',color='black',
+                    bbox=dict(facecolor='w', alpha=0.2))
 plt.savefig('/Users/Documents/Iris project/KNN_and_kfoldCV.png')
 plt.show()
